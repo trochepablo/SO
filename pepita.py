@@ -1,18 +1,20 @@
 import alimentos
+
 alimentos = alimentos.alimentos()
 
-class pepita:
-    def __init__(self, energia=0):
-        self.energia = energia
 
-    def comer(self):
-        self.energia = self.energia + alimentos.alpiste()
+class pepita:
+    def __init__(self, energy = 0):
+        self.energy = energy
+
+    def comer(self, cosa, gramos):
+        self.energy = self.energy + cosa.alpiste(gramos)
+
+
 # your code goes here
 
 # test code
 pepita = pepita()
 
-
-pepita.comer()
-pepita.comer()
-print(pepita.energia)
+pepita.comer(alimentos, 50)
+print(pepita.energy)

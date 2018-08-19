@@ -1,3 +1,3 @@
 class alimentos:
-    def alpiste(self):
-        return 4
+    def alpiste(self, gramos):
+        return gramos * 20
